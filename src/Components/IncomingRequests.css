@@ -1,0 +1,128 @@
+.appointments-container {
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .appointments-container h2 {
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .approve-button {
+    background: #27ae60;
+    margin-bottom: 5px;
+  }
+  
+  .approve-button:hover {
+    background: #219150;
+  }
+  
+  .deny-button {
+    background: #e74c3c;
+  }
+  
+  .deny-button:hover {
+    background: #c0392b;
+  }
+  
+  .approval-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .approval-form-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  .approval-form-content h3 {
+    margin-bottom: 10px;
+    color: #4a4a4a;
+    text-align: center;
+  }
+  
+  .approval-form-content .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .approval-form-content input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  .approval-form-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .send-approval-button {
+    background: #4a90e2;
+  }
+  
+  .send-approval-button:hover {
+    background: #357abd;
+  }
+  
+  .cancel-approval-button {
+    background: #e74c3c;
+    margin-left: 10px;
+  }
+  
+  .cancel-approval-button:hover {
+    background: #c0392b;
+  }
+  

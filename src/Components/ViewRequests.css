@@ -1,0 +1,66 @@
+.requests-container {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 75vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .requests-container h2 {
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    text-align: center;
+  }
+  
+  .requests-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .requests-table th,
+  .requests-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .requests-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .requests-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .requests-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .status-approved {
+    color: green;
+  }
+  
+  .status-pending {
+    color: orange;
+  }
+  
+  .status-denied {
+    color: red;
+  }
+  

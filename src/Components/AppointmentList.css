@@ -1,0 +1,120 @@
+.appointment-list-container {
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 75%;
+    text-align: center;
+  }
+  
+  .appointment-list-container h2 {
+    margin-bottom: 20px;
+    color: #4a4a4a;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .edit-button {
+    background: #4a90e2;
+  }
+  
+  .edit-button:hover {
+    background: #357abd;
+  }
+  
+  .cancel-button {
+    background: #e74c3c;
+  }
+  
+  .cancel-button:hover {
+    background: #c0392b;
+  }
+  
+  .appointment-form-container {
+    position: fixed; /* Fixed position */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center alignment */
+    z-index: 9999; /* Ensure it's on top of other content */
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  .appointment-form-container h3 {
+    margin-bottom: 10px;
+    color: #4a4a4a;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .appointment-form-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .save-button {
+    background: #4a90e2;
+  }
+  
+  .save-button:hover {
+    background: #357abd;
+  }
+  
+  .cancel-action-button {
+    background: #e74c3c;
+    margin-left: 10px;
+  }
+  
+  .cancel-action-button:hover {
+    background: #c0392b;
+  }
+  
