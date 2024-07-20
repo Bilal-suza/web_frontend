@@ -9,9 +9,7 @@ function RegistrationForm() {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    // Add registration logic here (e.g., form validation, API call to register user)
-
-    // After successful registration, navigate to the login page
+   
     navigate('/');
   };
 

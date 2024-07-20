@@ -18,7 +18,7 @@ const Header = () => {
 
 
   const handleSignOut = () => {
-    // Handle sign out logic here
+    
     console.log('Sign out');
   };
 

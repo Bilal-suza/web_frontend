@@ -22,6 +22,7 @@ import ManageStaff from './Components/ManageStaff';
 import ManageStudent from './Components/ManageStudents';
 import ManageAppointments from './Components/ManageAppointments';
 import ViewAppointments from './Components/ViewAppointments';
+import ManageUsers from './Components/ManageUsers';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Route path="/helpstaff" element={<StaffHelp />} />
         <Route path="/managestaff" element={<FullManageStaff />} />
         <Route path="/managestudent" element={<FullManageStudents/>} />
+        <Route path="/manageusers" element={<FullManageUsers/>} />
         <Route path="/manageappointments" element={<FullManageAppointments/>} />
         <Route path="/adminhelp" element={<FullAdminHelp />} />
         <Route path="/view-appointments" element={<FullViewAppointments />} />
@@ -193,6 +195,17 @@ const FullStaffDashboard = () => (
       <div className="main-content">
         <AdminSidenav />
         <ManageStudent/>
+        
+        
+      </div>
+    </div>
+  );
+  const FullManageUsers = () => (
+    <div className="app-container">
+      <Header />
+      <div className="main-content">
+        <AdminSidenav />
+        <ManageUsers/>
         
         
       </div>

@@ -7,7 +7,7 @@ const ChangePassword = ({ isOpen, onClose }) => {
 
   const handleSave = (e) => {
     e.preventDefault();
-    // Add logic to handle password change
+   
     console.log('New Password:', newPassword);
     console.log('Confirm New Password:', confirmNewPassword);
     onClose();

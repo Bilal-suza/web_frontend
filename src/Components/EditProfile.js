@@ -21,9 +21,9 @@ const EditProfileModal = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Submit form data to backend or handle it here
+   
     console.log('Form data submitted:', formData);
-    onClose(); // Close the modal after submission
+    onClose(); 
   };
 
   return (

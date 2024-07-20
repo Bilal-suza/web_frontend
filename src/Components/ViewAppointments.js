@@ -9,20 +9,20 @@ const ViewAppointments = () => {
     const fetchAppointments = async () => {
       try {
         const response = await axios.get('http://localhost:8080/api/appointments');
-        // Ensure response.data is always an array
+        
         if (Array.isArray(response.data)) {
           setAppointments(response.data);
         } else {
           console.error('Expected array from API, received:', response.data);
-          setAppointments([]); // Set appointments to empty array if response.data is not an array
+          setAppointments([]); 
         }
       } catch (error) {
         console.error('Error fetching appointments:', error);
-        setAppointments([]); // Set appointments to empty array on error
+        setAppointments([]); 
       }
     };
     fetchAppointments();
-  }, []); // Empty dependency array ensures useEffect runs only once on mount
+  }, []); 
 
   return (
     <div className="appointment-list-container">

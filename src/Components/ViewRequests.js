@@ -9,20 +9,20 @@ const ViewRequests = () => {
     const fetchRequests = async () => {
       try {
         const response = await axios.get('http://localhost:8080/api/requests');
-        // Ensure response.data is always an array
+        
         if (Array.isArray(response.data)) {
           setRequests(response.data);
         } else {
           console.error('Expected array from API, received:', response.data);
-          setRequests([]); // Set requests to empty array if response.data is not an array
+          setRequests([]); 
         }
       } catch (error) {
         console.error('Error fetching requests:', error);
-        setRequests([]); // Set requests to empty array on error
+        setRequests([]); 
       }
     };
     fetchRequests();
-  }, []); // Empty dependency array ensures useEffect runs only once on mount
+  }, []);
 
   return (
     <div className="requests-container">

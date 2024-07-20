@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTachometerAlt, faKey, faUsers, faUserGraduate, faAngleDown, faAngleRight, faCog, faSignOutAlt, faQuestionCircle, faEdit } from '@fortawesome/free-solid-svg-icons';
 import './Sidenav.css';
 import { Link } from 'react-router-dom';
-import ChangePassword from './Changepassword'; // Adjust the path as per your project structure
+import ChangePassword from './Changepassword'; 
 
 const AdminSidenav = () => {
   const [isAdvancedOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const [changePasswordOpen, setChangePasswordOpen] = useState(false); // State for Change Password modal
+  const [changePasswordOpen, setChangePasswordOpen] = useState(false); 
 
 
   const toggleSettings = () => {
@@ -16,7 +16,7 @@ const AdminSidenav = () => {
   };
 
   const handleSignOut = () => {
-    // Handle sign out logic here, for example, clearing auth tokens, redirecting to login page, etc.
+   
     console.log('Sign out');
   };
 
@@ -30,6 +30,7 @@ const AdminSidenav = () => {
         <FontAwesomeIcon icon={faTachometerAlt} className="icon" />
         <span>Dashboard</span>
       </Link>
+
 
       <Link to="/managestaff">
         <FontAwesomeIcon icon={faUsers} className="icon" />
@@ -46,9 +47,14 @@ const AdminSidenav = () => {
         <span>Manage Appointment</span>
       </Link>
 
+      <Link to="/manageusers">
+        <FontAwesomeIcon icon={faUsers} className="icon" />
+        <span>Manage Users</span>
+      </Link>
+
       {isAdvancedOpen && (
         <div className="submenu">
-          {/* Add links to appointment-related features here */}
+          {}
         </div>
       )}
 
@@ -69,7 +75,7 @@ const AdminSidenav = () => {
             <FontAwesomeIcon icon={faKey} className="icon" />
             <span>Change Password</span>
           </div>
-          {/* Add more settings links here */}
+          {}
         </div>
       )}
 
@@ -80,7 +86,7 @@ const AdminSidenav = () => {
         </Link>
       </div>
 
-      {/* Render ChangePassword modal if open */}
+      {}
       {changePasswordOpen && <ChangePassword isOpen={changePasswordOpen} onClose={toggleChangePasswordModal} />}
     </div>
   );

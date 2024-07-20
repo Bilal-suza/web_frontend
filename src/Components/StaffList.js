@@ -1,5 +1,3 @@
-// StaffList.js
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -36,7 +34,7 @@ const StaffList = () => {
 
   const sortedStaffMembers = staffMembers
     .filter((staff) => 
-      staff.fullName && staff.position && // Ensure properties exist before accessing
+      staff.fullName && staff.position && 
       (staff.fullName.toLowerCase().includes(searchTerm.toLowerCase()) ||
       staff.position.toLowerCase().includes(searchTerm.toLowerCase()))
     )

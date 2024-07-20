@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './signup.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -7,14 +7,16 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 
 const Signup = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const[username, setUserName] = useState('')
+  const[password, setPassword] = useState('')
+
+  const navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
-    e.preventDefault();   // Prevent the default form submission
-    
-    // Add your form validation logic here
+    e.preventDefault();   
 
-    // Navigate to the dashboard page
+    // const user = {username, password};
+    
 
     navigate('/AdminDashboard');
   };

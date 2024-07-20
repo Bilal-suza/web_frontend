@@ -143,7 +143,7 @@ const AppointmentList = () => {
               placeholder="Enter full name"
               value={appointmentDetails.fullName}
               onChange={(e) => setAppointmentDetails({ ...appointmentDetails, fullName: e.target.value })}
-              disabled // Disable editing of full name
+              disabled 
             />
           </div>
           <div className="appointment-form-buttons">
